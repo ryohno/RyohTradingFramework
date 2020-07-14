@@ -82,7 +82,7 @@ When creating a position, the reset() function is called to reset global variabl
             print('long position CREATED with: ' + quantity_of_stock + " SPXL")
 
 ```
-The sizing() function sizes the function based off class probability defined during prediction(). Boll_bands('long') sets the dynamic target for take profit, and sets the dynamic stop loss. Setting a dynamic stop-loss and take-profit is important to adjust for changing market conditions. For this, one could replace Bollinger Band use with ATR. Using the realtime price and the percentage sized bet, an order for # of stock is sent to the Tradier API. The order of the ID is stored in the id_order variable, and execution is ensured via the ensure_execution function. If the order is filled, the function returns true, and the timer is started for one of the variables of position management. The state is then transitioned to a 'to_close_long' state.
+The sizing() function sizes the position based off class probability defined during prediction(). Boll_bands('long') sets the dynamic target for take profit, and sets the dynamic stop loss. Setting a dynamic stop-loss and take-profit is important to adjust for changing market conditions. For this, one could replace Bollinger Band use with ATR. Using the realtime price and the percentage sized bet, an order for # of stock is sent to the Tradier API. The order of the ID is stored in the id_order variable, and execution is ensured via the ensure_execution function. If the order is filled, the function returns true, and the timer is started for one of the variables of position management. The state is then transitioned to a 'to_close_long' state.
 
 ## Closing a Position
 ```python
