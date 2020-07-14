@@ -141,6 +141,9 @@ def close_position_long():
 ```
 Continuing from the example of a long position, this function checks if any of the closing conditions are met. If the prediction returns '2' (for long) again, the timer is reset. Closing conditions include: hard timer, a defined rolling window of opposite predictions (to ensure against a false negative), stoploss, bailout during end of day, securing profit when target is hit (this does NOT transition state, but begins a trail stop), or trail stop is met. 
 
+#### Trail Stop
+Trailing stops are done with an adaptive dynamic stop, as the trail becomes smaller as the profit increases. Instead of a static percentage trail, this allows for more profits to be locked in as it grows larger.
+
 ## Future
 
 The use of global variables is bad practice and jarring. In future, I would make modifications to make the script more modular with classes and in different files, add config files for different tickers, and reduce the usage of globals and instead pass more data into the functions themselves. This project has taught me basics of Python, increased understanding of Pandas Dataframes, taught REST API and websockets usage, and the basics of statistics and data science in building my prediction model. 
