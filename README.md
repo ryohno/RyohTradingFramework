@@ -148,4 +148,7 @@ Trailing stops are done with an adaptive dynamic stop, as the trail becomes smal
 
 The use of global variables is bad practice and jarring. In future, I would make modifications to make the script more modular with classes and in different files, add config files for different tickers, and reduce the usage of globals and instead pass more data into the functions themselves. This project has taught me basics of Python, increased understanding of Pandas Dataframes, taught REST API and websockets usage, and the basics of statistics and data science in building my prediction model. 
 
+## Customization
+For this GitHub version, 0/1/2 are used as placeholders for short/neutral/long. In reality, this is not reflective of the real framework. These can be changed to fit any type of signal. 
+
 
