@@ -1,7 +1,7 @@
 # RyohTrader
 
 <div align="center">
-<img src=https://raw.githubusercontent.com/ryohno/RyohTradingFramework/master/ryoh.PNG" >
+<img src=https://raw.githubusercontent.com/ryohno/RyohTradingFramework/master/ryoh.PNG>
 </div>
 
 Trading framework using a pickled prediction model, utilizing Tradier Brokerage API. As I became interested in trading, I built a prediction model and this framework from scratch as my first real programming project. RyohTrader has two threads: the stream() thread for realtime data from a WebSockets connection, and main() for execution and trade management. This framework is specifically built to trade the leveraged SPY ETFs of SPXU (for short positions) and SPXL (for long positions), using a strategy of time varying beta. 
